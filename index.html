@@ -20,12 +20,12 @@
     <script>
         // Firebase Konfiguration (ersetze mit deinen echten Firebase-Daten!)
         const firebaseConfig = {
-            apiKey: "DEIN_API_KEY",
-            authDomain: "DEIN_PROJEKT.firebaseapp.com",
-            projectId: "DEIN_PROJEKT_ID",
-            storageBucket: "DEIN_PROJEKT.appspot.com",
-            messagingSenderId: "DEINE_SENDER_ID",
-            appId: "DEINE_APP_ID"
+            apiKey: "AIzaSyBKmHVfaNYbQrs7DkBxoyI5UbvngZ9eI1k",
+            authDomain: "nfc-poc-bd710.firebaseapp.com",
+            projectId: "nfc-poc-bd710",
+            storageBucket: "nfc-poc-bd710.firebasestorage.app",
+            messagingSenderId: "657750736935",
+            appId: "1:657750736935:web:53c1c4079e2f446d7a0e02"
         };
 
         // Firebase initialisieren
@@ -33,7 +33,7 @@
         const db = firebase.firestore();
 
         // Firestore-Daten abrufen
-        db.collection("users").doc("user1").get()
+        db.collection("users").doc("user123").get()
           .then((doc) => {
               if (doc.exists) {
                   const data = doc.data();
